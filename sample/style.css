@@ -1,0 +1,21 @@
+/* 折り畳みメニューを追加する場合 */
+.menu-box #check-box,
+.menu-box #check-box2 {
+  display: none;
+}
+ 
+.menu-box #check-box:checked ~ .menu-text,
+.menu-box #check-box2:checked ~ .menu-text {
+  display: block;
+}
+ 
+.menu-box #check-box:checked ~ .menu-label-title span:nth-child(2),
+.menu-box #check-box2:checked ~ .menu-label-title span:nth-child(2) {
+  transform: rotate(-45deg);
+}
+ 
+.menu-box #check-box:checked ~ .menu-label-title span:nth-child(3),
+.menu-box #check-box2:checked ~ .menu-label-title span:nth-child(3) {
+  transform: rotate(45deg);
+}
+/* ここまで */
